@@ -1,0 +1,6 @@
+# Cloudflare Pages: this is a client-side-routed React SPA (react-router).
+# Without this, a hard refresh (or a shared link) on e.g. /posts/5/edit
+# 404s, because Cloudflare Pages would otherwise look for a literal
+# posts/5/edit file on disk instead of serving index.html and letting
+# react-router take over.
+/* /index.html 200
